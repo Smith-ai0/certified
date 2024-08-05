@@ -1,1 +1,105 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .certificate-container {
+            width: 210mm; /* A4 width */
+            height: 297mm; /* A4 height */
+            margin: 0 auto;
+            border: 15px solid #3498db; /* Blue border color */
+            background-color: #ffffff;
+            padding: 20mm;
+            box-sizing: border-box;
+            position: relative;
+        }
+        header {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .registration-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-weight: bold;
+            color: #333333;
+        }
+        .header-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #3498db; /* Button color */
+            color: #ffffff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .certificate-content {
+            margin: 0;
+        }
+        .footer-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .stamp {
+            width: 100px;
+            height: auto;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <header>
+           <a> <div class="registration-number">REG-20240805****</div></a>
+           <br>
+            <a href="https://up.gov.in/en" class="header-link" target="_blank">Visit UP Government</a>
+        </header>
+        <section class="certificate-content">
+            <h2>Certificate of Service</h2>
+            <p>This is to certify that we are capable of providing comprehensive services to locate lost mobile phones and share relevant data with customers. Our services leverage advanced technologies and methodologies to ensure effective and efficient recovery of lost devices.</p>
+            <h3>Service Description:</h3>
+            <ul>
+                <li><strong>Mobile Phone Location:</strong> Utilizing advanced GPS tracking, triangulation methods, and network-based technologies to find lost mobile devices. We integrate with telecom services from major providers like <a href="https://www.airtel.in" target="_blank">Airtel</a>, <a href="https://www.jio.com" target="_blank">Jio</a>, and <a href="https://www.vodafone.in" target="_blank">Vodafone</a> for enhanced tracking capabilities.</li>
+                <li><strong>Data Sharing:</strong> Securely providing necessary data to the rightful owner of the mobile phone, ensuring privacy and data protection. Our system adheres to the highest standards of data security.</li>
+                <li><strong>High Success Rate:</strong> We have a proven track record of successfully locating and recovering lost mobile phones, thanks to our robust technology and efficient processes.</li>
+            </ul>
+            <h3>Technology and Integration:</h3>
+            <p>We use cutting-edge technologies such as:</p>
+            <ul>
+                <li><strong>GPS Tracking:</strong> Real-time tracking of mobile devices using satellite data.</li>
+                <li><strong>Network Triangulation:</strong> Determining the location based on the signal strength from multiple cell towers.</li>
+                <li><strong>Advanced Algorithms:</strong> Employing sophisticated algorithms for precise location detection and data analysis.</li>
+            </ul>
+            <h3>Terms and Conditions:</h3>
+            <ul>
+                <li>The service is subject to the availability of necessary tracking technologies and customer cooperation.</li>
+                <li>Customers must provide proof of ownership for the lost mobile phone.</li>
+                <li>Data shared will be limited to what is necessary for the identification and recovery of the device.</li>
+                <li>Service charges may apply depending on the complexity of the case and resources required.</li>
+                <li>The company is not liable for any damage or loss caused during the recovery process.</li>
+            </ul>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <img src="https://raw.githubusercontent.com/Smith-ai0/recov/main/images.jpg" alt="Telecom Regulatory Authority Stamp" class="stamp">
+                <img src="https://raw.githubusercontent.com/Smith-ai0/recov/main/download.jpg" alt="Government Stamp" class="stamp">
+            </div>
+            <p>Date: <span id="date"></span></p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
