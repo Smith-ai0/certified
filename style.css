@@ -1,0 +1,86 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.certificate-container {
+    background: white;
+    padding: 40px;
+    border: 10px solid #4CAF50; /* Green border */
+    width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    background-image: url('https://raw.githubusercontent.com/Smith-ai0/recov/main/images/images%20(1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+.certificate-content {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.certificate-content h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    text-decoration: underline;
+    color: #4CAF50; /* Green header text */
+}
+
+.certificate-content h3 {
+    color: #FF5722; /* Orange subheader text */
+}
+
+.certificate-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certificate-content ul li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: left;
+    padding-top: 10px;
+    border-top: 2px solid #000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer img.stamp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #2196F3; /* Blue footer text */
+}
